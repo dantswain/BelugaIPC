@@ -1,9 +1,8 @@
-#require File.expand_path('lib/rhubarb/version', File.dirname(__FILE__))
+require File.expand_path('lib/beluga_ipc/version', File.dirname(__FILE__))
 
 Gem::Specification.new do |s|
   s.name = %q{beluga_ipc}
-  #s.version = Rhubarb::Version::STRING
-  s.version = '0.1.0'
+  s.version = BelugaIPC::Version::STRING
   s.authors = ["Dan Swain"]
   s.date = Time.now.utc.strftime("%Y-%m-%d")
   s.email = %q{dan.t.swain@gmail.com}

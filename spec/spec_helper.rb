@@ -1,5 +1,4 @@
-require File.expand_path("../../rhubarb/rhubarb", __FILE__)
-require File.expand_path("../../beluga_server", __FILE__)
+Dir[File.expand_path("../../lib/*.rb", __FILE__)].each { |f| require f }
 
 RSpec.configure do |config|
   

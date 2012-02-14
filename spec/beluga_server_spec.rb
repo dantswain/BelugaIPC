@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe BelugaServer do
+describe BelugaIPC::Server do
 
   before(:each) do
-    BelugaServer.reset_data
-    @server = BelugaServer.new(1234, '127.0.0.1')
+    BelugaIPC::Server.reset_data
+    @server = BelugaIPC::Server.new(1234, '127.0.0.1')
     @server.start
 
     @sock = TCPSocket.open('127.0.0.1', 1234)
@@ -12,7 +12,7 @@ describe BelugaServer do
   end
 
   it "should have the right welcome message" do
-    @welcome.should match "Welcome to BelugaServer, client 1."
+    @welcome.should match "Welcome to Beluga IPC Server, client 1."
   end
 
   it "should respond to ping" do
