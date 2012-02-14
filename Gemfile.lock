@@ -1,0 +1,14 @@
+GIT
+  remote: git://github.com/dantswain/rhubarb.git
+  revision: 64f2513f4e0e634f07fed81d95c83e247f3999ff
+  specs:
+    rhubarb (0.1.0)
+
+GEM
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rhubarb!
