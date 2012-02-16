@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.date = Time.now.utc.strftime("%Y-%m-%d")
   s.email = %q{dan.t.swain@gmail.com}
   s.files = `git ls-files`.split("\n")
-  s.homepage = %q{http://poincare.princeton.edu/gitweb/?p=BelugaIPC}
+  s.homepage = %q{http://github.com/leonard-lab/BelugaIPC}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.8.11}
