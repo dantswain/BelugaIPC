@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require File.join(File.dirname(__FILE__), '../lib/beluga_ipc')
+require 'daemons'
+
+opts = {
+    :monitor => true
+}
+
+Daemons.run_proc('beluga_daemon', opts) do
+  BelugaIPC::Manager.launch
+  BelugaIPC::Manager.join
+end

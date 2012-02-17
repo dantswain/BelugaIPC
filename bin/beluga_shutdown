@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+path = File.join(File.dirname(__FILE__), 'beluga_daemon stop')
+exec path

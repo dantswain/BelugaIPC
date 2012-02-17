@@ -7,6 +7,7 @@ Gem::Specification.new do |s|
   s.date = Time.now.utc.strftime("%Y-%m-%d")
   s.email = %q{dan.t.swain@gmail.com}
   s.files = `git ls-files`.split("\n")
+  s.executables = Dir.glob("bin/*").map{ |f| File.basename(f) }
   s.homepage = %q{http://github.com/leonard-lab/BelugaIPC}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]

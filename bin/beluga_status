@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+path = File.join(File.dirname(__FILE__), 'beluga_daemon status')
+$stdout.puts `#{path}`.split("\n").last.strip
+
